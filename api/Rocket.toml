@@ -1,0 +1,14 @@
+[default]
+address = "0.0.0.0"
+port = 8000
+
+[default.databases.user_db]
+url = "postgres://dev_user:dev_password@db:5432/user_db"
+
+[default.tls]
+key = "./certs/api-dev.key" 
+certs = "./certs/api-dev.crt"
+
+[default.tls.mutual]
+ca_certs = "./certs/ca-dev.crt"
+mandatory = true 
